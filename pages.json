@@ -1,0 +1,72 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "挂刀助手",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/ucenter/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tools/index",
+			"style": {
+				"navigationBarTitleText": "apex工具"
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "pages_ucenter",
+		"pages": [{
+			"path": "preference/index",
+			"style": {
+				"navigationBarTitleText": "偏好设置",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		}, {
+			"path": "about/index",
+			"style": {
+				"navigationBarTitleText": "关于我们",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		}]
+	}],
+	"preloadRule": {
+		"pages/ucenter/index": {
+			"network": "all",
+			"packages": ["pages_ucenter"]
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"borderStyle": "black",
+		"selectedColor": "#14274E",
+		"color": "#9BA4B4",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "挂刀",
+				"selectedIconPath": "static/icons/steam-active.png",
+				"iconPath": "static/icons/steam.png"
+			},
+			{
+				"pagePath": "pages/ucenter/index",
+				"text": "我的",
+				"selectedIconPath": "static/icons/user-active.png",
+				"iconPath": "static/icons/user.png"
+			}
+		]
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "vuex": "^4.1.0"
+  }
+}
