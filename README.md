@@ -8,7 +8,7 @@ PC站点访问地址：https://www.iflow.work/
 
 APP站点：
 
-![](./qrcode.png)
+![](./qrcode.jpeg)
 
 ## 开发计划
 #### v1.0.0
